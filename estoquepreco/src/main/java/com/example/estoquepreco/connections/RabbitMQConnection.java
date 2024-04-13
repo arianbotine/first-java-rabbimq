@@ -31,23 +31,24 @@ public class RabbitMQConnection {
     }
 
     @PostConstruct
-    private void add() {
-        Queue queueStock = this.queue(RabbitMQEnum.QUEUE_STOCK.getDescription());
-        Queue queuePrice = this.queue(RabbitMQEnum.QUEUE_PRICE.getDescription());
+    private void initRabbitMQ() {
+        this.add(RabbitMQEnum.QUEUE_STOCK);
+        this.add(RabbitMQEnum.QUEUE_PRICE);
+    }
+
+    private void add(RabbitMQEnum queue) {
+        Queue newQueue = this.queue(queue.getDescription());
 
         DirectExchange exchange = this.directExchange();
 
-        Binding relationshipStock = this.relationship(queueStock, exchange);
-        Binding relationshipPrice = this.relationship(queuePrice, exchange);
+        Binding relationship = this.relationship(newQueue, exchange);
 
         //Criando as filas no RabbitMQ
-        this.amqpAdmin.declareQueue(queueStock);
-        this.amqpAdmin.declareQueue(queuePrice);
+        this.amqpAdmin.declareQueue(newQueue);
 
         //RabbitMQ vai ver que já existe e não irá criar de novo, pois estou usando uma exchange que já existe
         this.amqpAdmin.declareExchange(exchange);
 
-        this.amqpAdmin.declareBinding(relationshipStock);
-        this.amqpAdmin.declareBinding(relationshipPrice);
+        this.amqpAdmin.declareBinding(relationship);
     }
 }
