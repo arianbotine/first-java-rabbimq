@@ -1,4 +1,4 @@
-package com.example.estoquepreco.enums;
+package enums;
 
 public enum RabbitMQEnum {
     QUEUE_STOCK("STOCK"),

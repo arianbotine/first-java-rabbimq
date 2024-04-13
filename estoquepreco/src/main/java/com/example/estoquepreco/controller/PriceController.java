@@ -1,7 +1,7 @@
 package com.example.estoquepreco.controller;
 
-import com.example.estoquepreco.dto.PriceDto;
-import com.example.estoquepreco.enums.RabbitMQEnum;
+import dto.PriceDto;
+import enums.RabbitMQEnum;
 import com.example.estoquepreco.service.RabbitMQService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

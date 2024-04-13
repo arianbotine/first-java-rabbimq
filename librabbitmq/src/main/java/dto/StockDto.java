@@ -1,4 +1,4 @@
-package com.example.estoquepreco.dto;
+package dto;
 
 import java.io.Serializable;
 
