@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd1e7bba-5b18-4a5e-9acf-faad2e8235f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../estoquepreco/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../estoquepreco/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../estoquepreco/src/main/java/com/example/estoquepreco/controller/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../estoquepreco/src/main/java/com/example/estoquepreco/controller/StockController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../estoquepreco/src/main/java/com/example/estoquepreco/dto/PriceDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/PriceDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../estoquepreco/src/main/java/com/example/estoquepreco/dto/StockDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/StockDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../estoquepreco/src/main/java/com/example/estoquepreco/enums/RabbitMQEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/enums/RabbitMQEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +32,8 @@
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/projetos/first-java-rabbitmq/librabbitmq/src/main/java",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.general"
   }
 }]]></component>
