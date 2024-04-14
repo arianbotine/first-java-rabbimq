@@ -22,4 +22,5 @@ public class HandlerException implements ErrorHandler {
 
         throw new AmqpRejectAndDontRequeueException("Falha fatal, não deve retornar para a fila");
     }
+
 }
