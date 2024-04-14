@@ -1,0 +1,14 @@
+{
+  "name": "consumer-price-nodejs",
+  "version": "1.0.0",
+  "description": "consumer-price",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.4"
+  }
+}
