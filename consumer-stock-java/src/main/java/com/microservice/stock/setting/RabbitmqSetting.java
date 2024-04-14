@@ -1,5 +1,6 @@
 package com.microservice.stock.setting;
 
+import com.microservice.stock.exception.HandlerException;
 import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.rabbit.config.DirectRabbitListenerContainerFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
@@ -18,11 +19,14 @@ public class RabbitmqSetting {
         factory.setConnectionFactory(connectionFactory);
         factory.setAcknowledgeMode(AcknowledgeMode.AUTO);
 
+        //Determina quantas mensagens simultaneas podem ser armazenadas no buffer do consumo da fila
         factory.setPrefetchCount(3);
         //factory.setGlobalQos(true);
 
         //Quantas threads por queue?
         //factory.setConsumersPerQueue(2);
+
+        factory.setErrorHandler(new HandlerException());
 
         return factory;
     }

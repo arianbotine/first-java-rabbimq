@@ -2,7 +2,7 @@ package com.example.stockprice.controller;
 
 import dto.StockDto;
 import constant.RabbitmqConstants;
-import com.example.stockprice.service.RabbitMQService;
+import com.example.stockprice.service.RabbitmqService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class StockController {
 
     @Autowired
-    private RabbitMQService rabbitMQService;
+    private RabbitmqService rabbitMQService;
 
     @PutMapping
     private ResponseEntity updateStock(@RequestBody StockDto stockDto) {

@@ -21,5 +21,7 @@ public class ConsumerStock {
         System.out.println("-----------------------------------------");
 
         Thread.sleep(3000);
+
+        //throw new IllegalArgumentException("Argumento inválido");
     }
 }
