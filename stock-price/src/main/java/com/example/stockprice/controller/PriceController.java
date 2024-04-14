@@ -1,8 +1,8 @@
-package com.example.estoquepreco.controller;
+package com.example.stockprice.controller;
 
 import dto.PriceDto;
-import enums.RabbitMQEnum;
-import com.example.estoquepreco.service.RabbitMQService;
+import constant.RabbitmqConstants;
+import com.example.stockprice.service.RabbitMQService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +21,7 @@ public class PriceController {
     @PutMapping
     private ResponseEntity updatePrice(@RequestBody PriceDto priceDto) {
 
-        this.rabbitMQService.sendMessage(RabbitMQEnum.QUEUE_PRICE.getDescription(), priceDto);
+        this.rabbitMQService.sendMessage(RabbitmqConstants.QUEUE_PRICE, priceDto);
         return new ResponseEntity(HttpStatus.OK);
     }
 }

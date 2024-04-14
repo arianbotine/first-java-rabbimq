@@ -1,6 +1,6 @@
-package com.example.estoquepreco.connections;
+package com.example.stockprice.connections;
 
-import com.example.estoquepreco.enums.RabbitMQEnum;
+import constant.RabbitmqConstants;
 import jakarta.annotation.PostConstruct;
 import org.springframework.amqp.core.AmqpAdmin;
 import org.springframework.amqp.core.Binding;
@@ -9,35 +9,43 @@ import org.springframework.amqp.core.Queue;
 import org.springframework.stereotype.Component;
 
 @Component
-public class RabbitMQConnection {
+public class RabbitmqConnection {
 
     private static final String NAME_EXCHANGE = "amq.direct";
     private AmqpAdmin amqpAdmin;
 
-    public RabbitMQConnection(AmqpAdmin amqpAdmin) {
+    public RabbitmqConnection(AmqpAdmin amqpAdmin) {
+
         this.amqpAdmin = amqpAdmin;
     }
 
     private Queue queue(String queueName) {
+
         return new Queue(queueName, true, false, false);
     }
 
     private DirectExchange directExchange() {
+
         return new DirectExchange(NAME_EXCHANGE);
     }
 
     private Binding relationship (Queue queue, DirectExchange exchange) {
-       return new Binding(queue.getName(), Binding.DestinationType.QUEUE, exchange.getName(), queue.getName(), null);
+       return new Binding(
+               queue.getName(),
+               Binding.DestinationType.QUEUE,
+               exchange.getName(),
+               queue.getName(),
+               null);
     }
 
     @PostConstruct
     private void initRabbitMQ() {
-        this.add(RabbitMQEnum.QUEUE_STOCK);
-        this.add(RabbitMQEnum.QUEUE_PRICE);
+        this.add(RabbitmqConstants.QUEUE_STOCK);
+        this.add(RabbitmqConstants.QUEUE_PRICE);
     }
 
-    private void add(RabbitMQEnum queue) {
-        Queue newQueue = this.queue(queue.getDescription());
+    private void add(String queue) {
+        Queue newQueue = this.queue(queue);
 
         DirectExchange exchange = this.directExchange();
 

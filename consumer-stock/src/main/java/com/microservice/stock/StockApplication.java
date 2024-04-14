@@ -1,13 +1,13 @@
-package com.example.estoquepreco;
+package com.microservice.stock;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EstoqueprecoApplication {
+public class StockApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EstoqueprecoApplication.class, args);
+		SpringApplication.run(StockApplication.class, args);
 	}
 
 }

@@ -5,12 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fd1e7bba-5b18-4a5e-9acf-faad2e8235f3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../consumer-stock/src/main/java/consumer/StockConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../consumer-stock/src/main/java/org/consumer/stock/ConsumerStockApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/constant/RabbitmqConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../consumer-stock/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../consumer-stock/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../consumer-stock/src/main/java/org/consumer/stock/StockApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-price/src/main/java/com/example/stockprice/StockPriceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../consumer-stock/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../consumer-stock/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/enums/RabbitMQEnum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock-price/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-price/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock-price/src/main/java/com/example/estoquepreco/EstoqueprecoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock-price/src/main/java/com/example/estoquepreco/connections/RabbitMQConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-price/src/main/java/com/example/stockprice/connections/RabbitmqConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock-price/src/main/java/com/example/estoquepreco/controller/PriceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-price/src/main/java/com/example/stockprice/controller/PriceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock-price/src/main/java/com/example/estoquepreco/controller/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-price/src/main/java/com/example/stockprice/controller/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock-price/src/main/java/com/example/estoquepreco/service/RabbitMQService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-price/src/main/java/com/example/stockprice/service/RabbitMQService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../stock-price/src/test/java/com/example/estoquepreco/EstoqueprecoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/../stock-price/src/test/java/com/example/stockprice/EstoqueprecoApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -30,11 +50,11 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/projetos/first-java-rabbitmq/librabbitmq/src/main/java",
+    "last_opened_file_path": "C:/projetos/first-java-rabbitmq/consumer-stock",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.general"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
