@@ -13,11 +13,13 @@ import org.springframework.stereotype.Component;
 public class ConsumerStock {
 
     @RabbitHandler
-    private void consumer(String message) throws JsonProcessingException {
+    private void consumer(String message) throws JsonProcessingException, InterruptedException {
         StockDto stockDto = new ObjectMapper().readValue(message, StockDto.class);
 
         System.out.println(stockDto.productCode);
         System.out.println(stockDto.quantity);
         System.out.println("-----------------------------------------");
+
+        Thread.sleep(3000);
     }
 }
